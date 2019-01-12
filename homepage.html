@@ -1,0 +1,131 @@
+!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+        <style>
+                * {
+                  box-sizing: border-box;
+                }
+                
+                input[type=text], select, textarea {
+                  width: 100%;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  resize: vertical;
+                }
+                
+                label {
+                  padding: 12px 12px 12px 0;
+                  display: inline-block;
+                }
+                
+                input[type=submit] {
+                  background-color: #4CAF50;
+                  color: white;
+                  padding: 12px 20px;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  float: right;
+                }
+                
+                input[type=submit]:hover {
+                  background-color: #45a049;
+                }
+                
+                .container {
+                  border-radius: 5px;
+                  background-color: #f2f2f2;
+                  padding: 20px;
+                }
+                
+                .col-25 {
+                  float: left;
+                  width: 25%;
+                  margin-top: 6px;
+                }
+                
+                .col-75 {
+                  float: left;
+                  width: 75%;
+                  margin-top: 6px;
+                }
+                
+              
+                .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+                
+                
+    
+                </style>
+    
+</head>
+<body>
+    <div class="inputform">
+        <form action="input_page.php">
+            <div class="row">
+                <div class="col1">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="name" name="name" placeholder="Enter Name">
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col1">
+                        <label for="ID">ID</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="sid" name="sid" placeholder="Enter ID">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col1">
+                        <label for="Date">Date</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="Date" name="Date" placeholder="Enter Date">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col1">
+                        <label for="Venue">Venue</label>
+                    </div>
+                    <div class="col2">
+                            <select id="venue" name="venue">
+                                    <option value="CL1">CLC001</option>
+                                    <option value="CLC2">CLC002</option>
+                                    <option value="CLC3">CLC003</option>
+                                    <option value="FOL1">FOL101</option>
+                                    <option value="FOL2">FOL102</option>
+                                    <option value="FOL3">FOL103</option>
+                                    <option value="FIST1">FIST001</option>
+                                    <option value="FIST2">FIST002</option>
+                                    <option value="FIST3">FIST003</option>
+                                    <option value="FET1">FET001</option>
+                                    <option value="FET2">FET002</option>
+                                    <option value="FET3">FET003</option>
+                                  </select>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col1">
+                        <label for="Time">Time</label>
+                    </div>
+                    <div class="col2">
+                            <input type="time" name="usr_time">
+                    </div>
+            </div>
+            <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+            
+               
+        </form>
+    </div>
+    
+</body>
+</html>
